@@ -570,12 +570,12 @@ allcmd = ["play", "current", "playlist", "song", f"song@{USERNAME}", f"play@{USE
 async def not_chat(_, m: Message):
     buttons = [
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("JOIN NOW", url="https://t.me/DPs_Musica_World"),
+                InlineKeyboardButton("FEEDBACK", url="https://t.me/Mjolnir_Dp"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/Thor-Ragnarokk/Dps_MUSICA_WORLDV2"),
             ]
          ]
-    k=await m.reply_photo(photo="https://telegra.ph/file/4e839766d45935998e9c6.jpg", caption="**Sorry, You Can't Use This Bot In This Group! 🤷‍♂️ But You Can Make Your Own Bot Like This From The [Source Code](https://github.com/AsmSafone/RadioPlayerV3) Below 😉!**", reply_markup=InlineKeyboardMarkup(buttons))
+    k=await m.reply_photo(photo="https://telegra.ph/file/9f51f2cdacbc3e6cc8144.jpg", caption="**Sorry, You Can't Use This Bot In This Group! 🤷‍♂️ But You Can Make Your Own Bot Like This From The [Source Code](https://github.com/Thor-Ragnarokk/Dps_MUSICA_WORLDV2) Below 😉!**", reply_markup=InlineKeyboardMarkup(buttons))
     await mp.delete(m)

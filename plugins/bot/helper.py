@@ -28,7 +28,7 @@ CHAT=Config.CHAT
 ADMINS=Config.ADMINS
 playlist=Config.playlist
 
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player V3.0** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with ❤️ By @DPs_Musica_World 😉!"
+HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player V3.0** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with ❤️ By @DPs_Musica_World 🎧!"
 HELP_TEXT = """
 🏷️ --**Setting Up**-- :
 

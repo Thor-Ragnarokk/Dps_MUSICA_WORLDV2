@@ -28,7 +28,7 @@ CHAT=Config.CHAT
 ADMINS=Config.ADMINS
 playlist=Config.playlist
 
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player V3.0** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with ❤️ By @MJLonir_Dp 😉!"
+HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player V3.0** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with ❤️ By @DPs_Musica_World 😉!"
 HELP_TEXT = """
 🏷️ --**Setting Up**-- :
 
@@ -61,7 +61,7 @@ HELP_TEXT = """
 \u2022 `/restart` - update & restart the bot
 
 © **Powered By** : 
-**@AsmSafone | @SafoTheBot** 👑
+**@DPs_Musica_World | @MNTLinks** 👑
 """
 
 
@@ -189,12 +189,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("JOIN NOW", url="https://t.me/DPs_Musica_World"),
+                InlineKeyboardButton("FEEDBACK", url="https://t.me/Mjolnir_Dp"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("MOVIES NOW TAMIL", url="https://t.me/Mntlinks"),
+                InlineKeyboardButton("SOURCE CODE", url="https://github.com/Thor-Ragnarokk/Dps_MUSICA_WORLDV2"),
             ],
             [
                 InlineKeyboardButton("CLOSE MENU", callback_data="close"),
@@ -224,19 +224,19 @@ async def start(client, message):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("JOIN NOW", url="https://t.me/DPs_Musica_World"),
+                InlineKeyboardButton("FEEDBACK", url="https://t.me/Mjolnir_Dp"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("MOVIES NOW TAMIL", url="https://t.me/MNTlinks"),
+                InlineKeyboardButton("SOURCE CODE", url="https://github.com/Thor-Ragnarokk/Dps_MUSICA_WORLDV2"),
             ],
             [
                 InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    m=await message.reply_photo(photo="https://telegra.ph/file/4e839766d45935998e9c6.jpg", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
+    m=await message.reply_photo(photo="https://telegra.ph/file/9f51f2cdacbc3e6cc8144.jpg", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
     await mp.delete(m)
     await mp.delete(message)
 
@@ -249,12 +249,12 @@ async def help(client, message):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("JOIN NOW", url="https://t.me/DPs_Musica_World"),
+                InlineKeyboardButton("FEEDBACK", url="https://t.me/Mjolnir_Dp"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("MOVIES NOW TAMIL", url="https://t.me/MNTLINKS"),
+                InlineKeyboardButton("SOURCE CODE", url="https://github.com/Thor-Ragnarokk/Dps_MUSICA_WORLDV2"),
             ],
             [
                 InlineKeyboardButton("CLOSE MENU", callback_data="close"),
@@ -263,6 +263,6 @@ async def help(client, message):
     reply_markup = InlineKeyboardMarkup(buttons)
     if msg.get('help') is not None:
         await msg['help'].delete()
-    msg['help'] = await message.reply_photo(photo="https://telegra.ph/file/4e839766d45935998e9c6.jpg", caption=HELP_TEXT, reply_markup=reply_markup)
+    msg['help'] = await message.reply_photo(photo="https://telegra.ph/file/9f51f2cdacbc3e6cc8144.jpg", caption=HELP_TEXT, reply_markup=reply_markup)
     await mp.delete(message)
 
